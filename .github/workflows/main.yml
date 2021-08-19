@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create a build-output file
-        run: echo "Build Job" > build-output.txt
+        run: ifconfig > build-output.txt
       
       - name: Pass the file to the next job
         uses: actions/upload-artifact@v2
