@@ -1,0 +1,25 @@
+name: DevSecOps workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print an echo statement
+        run: echo "welcome"
+        run: echo "line 2" 
+
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: print a test statement
+        run: echo "welcome to windows"
+        run: echo "line 2 of windows"
+
+  provision:
+
+  deploy:
+
+  monitor:
+
