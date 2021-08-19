@@ -10,6 +10,7 @@ jobs:
         run: |
           echo "Welcome to Build Step"
           echo "Build is going on"
+          ifconfig
   test:
     runs-on: windows-latest
     steps:
@@ -17,3 +18,4 @@ jobs:
         run: |
           echo "Welcome to Test Step"
           echo "Testing is going on"
+          ipconfig
