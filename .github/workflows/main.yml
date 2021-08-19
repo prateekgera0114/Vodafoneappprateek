@@ -1,4 +1,4 @@
-name: DevSecOps workflow
+name: DevSecOps Workflow
 
 on: [push]
 
@@ -6,20 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: print an echo statement
-        run: echo "welcome"
-        run: echo "line 2" 
-
+      - name: Print a Build Statement
+        run: |
+          echo "Welcome to Build Step"
+          echo "Build is going on"
   test:
     runs-on: windows-latest
     steps:
-      - name: print a test statement
-        run: echo "welcome to windows"
-        run: echo "line 2 of windows"
-
-  provision:
-
-  deploy:
-
-  monitor:
-
+      - name: Print a test Statement
+        run: |
+          echo "Welcome to Test Step"
+          echo "Testing is going on"
